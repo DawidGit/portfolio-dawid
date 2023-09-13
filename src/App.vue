@@ -1,35 +1,52 @@
 <template>
-    <v-app>
-      <v-btn @click="toggleTheme"></v-btn>
-      <v-main>
+  <v-app class="global">
+    <NavigationBar class="navigation-bar"/>
+    <v-container class="container-style" fluid="true">
+      <v-sheet color="#121212" rounded="lg"
+               class="d-flex align-center justify-center flex-wrap text-center mx-auto sheet-style">
         <router-view/>
-      </v-main>
-    </v-app>
+      </v-sheet>
+    </v-container>
+    <CustomFooter></CustomFooter>
+  </v-app>
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue'
-import {useTheme} from "vuetify";
+import NavigationBar from "@/components/NavigationBar.vue";
+import CustomFooter from "@/components/CustomFooter.vue";
 
 
 export default defineComponent({
   name: 'App',
+  components: {CustomFooter, NavigationBar},
 
-  methods: {
-    toggleTheme() {
-
-      return this.theme.current.dark.valueOf().valueOf() ? 'light' : 'dark';
-    }
-  },
   data() {
-    return {
-      theme: useTheme()
-    }
+    return {}
   },
 })
 </script>
 
-<style>
+<style scoped>
+
+.global {
+
+}
+
+.navigation-bar {
+  width: 80%
+}
+
+.sheet-style {
+  background-color: #181818;
+  height: fit-content;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.container-style {
+  min-height: 70vh;
+}
 
 
 </style>

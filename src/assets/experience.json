@@ -1,0 +1,57 @@
+{
+  "jobs": [
+    {
+      "title": "Quality Assurance Engineer",
+      "company": "Appfire Technologies",
+      "companyLogo": "/assets/icons/appfireLogo.png",
+      "companyWebsite": "https://appfire.com",
+      "place": "Warsaw",
+      "dates": "OCT 2020 - PRESENT",
+      "responsibilities": [
+        "Write, maintain, and execute test scenarios, test plans, and test cases (QMetry).",
+        "Analyze and check communication with external applications (REST API, Postman).",
+        "Creating technical documentation for internal use (Confluence).",
+        "Working with Agile/Scrum methodology (Jira, BigPicture).",
+        "Writing unit and integration tests (Java, Groovy, Spock, JUnit, WireMock, IntelliJ).",
+        "Optimized test cases to maximize the success of manual software testing.",
+        "Training and guidance onsite and remotely team members in quality assurance standards, policies, and procedures.",
+        "Worked closely with different departments to develop innovative solutions tofunctionality issues.",
+        "Fix identified issues to improve workflows.",
+        "Actively supporting developers with the commit testings and also bugreproductions, including changes in Database (Postgres, MySQL)."
+      ]
+    },
+    {
+      "title": "Senior Master Data Specialist",
+      "company": "Makro Polska",
+      "companyLogo": "/assets/icons/makroLogo.png",
+      "companyWebsite": "https://www.makro.pl",
+      "place": "Warsaw",
+      "dates": "APR 2017 - SEP 2020",
+      "responsibilities": [
+        "Implementing and testing internal applications to improve data change andcirculation.",
+        "Coordinate the work of specialists in the Master Data Team",
+        "Reporting data quality and status of projects to Master Data Manager (Dataaggregation, creating reports).",
+        "Training and development of the specialists in the team (Excel, VBA, SAP).",
+        "Validate incoming data against quality standards to eliminate irrelevant or unusableinformation.",
+        "Maintain files, records, and chronologies of entry activities.",
+        "Produce monthly reports with advanced Excel spreadsheet functions.",
+        "Optimize the quality of data by developing and continuously improving datacollection and automated upload strategies.",
+        "Assist operations to staff in researching data configuration and processing issues.",
+        "Research, extraction, and interpretation of information in order to determine thecorrect data entry procedure."
+      ]
+    },
+    {
+      "title": "Master Data Specialist",
+      "company": "Makro Polska",
+      "companyLogo": "/assets/icons/makroLogo.png",
+      "companyWebsite": "https://www.makro.pl",
+      "place": "Warsaw",
+      "dates": "OCT 2012 - MAR 2017",
+      "responsibilities": [
+        "Make of bulk changes to internal systems",
+        "Cooperation with the Department of Commerce, Marketing, IT, and IntelligenceSystems",
+        "Implementation of tools and projects to improve the efficiency of the company on theresponse to a rapidly change of market."
+      ]
+    }
+  ]
+}
