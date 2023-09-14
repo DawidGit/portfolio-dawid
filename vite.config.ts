@@ -8,15 +8,13 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: '/dawidwidulinski-portfolio/',
   plugins: [
 		vue(),
-		vuetify({ autoImport: true }),
-
-	],
+		vuetify({ autoImport: true }),],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-    base: '/dawidwidulinski-portfolio'
+  }
 })
