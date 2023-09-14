@@ -1,0 +1,35 @@
+name: Build and Deploy dawid-portfolio project
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Vue.js project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAIL_TO_DAWID: ${{secrets.MAIL_TO_DAWID}}
+          API_KEY_CMI: ${{secrets.API_KEY_CMI}}
+          USER_NAME_CMI: ${{secrets.USER_NAME_CMI}}
+        run: |
+          npm install -g gh-pages
+          gh-pages -d dist -b gh-pages -u "GitHub Actions"
