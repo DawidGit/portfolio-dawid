@@ -29,10 +29,6 @@ export default defineComponent({
 
 <style scoped>
 
-.global {
-
-}
-
 .navigation-bar {
   width: 80%
 }
