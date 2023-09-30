@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {ref} from "vue";
-import {MessageClient} from "cloudmailin"
+import {MessageClient} from 'cloudmailin';
 import * as process from "process";
 
 const mailFrom: string = "contact_form@dawidwidulinski.com"
