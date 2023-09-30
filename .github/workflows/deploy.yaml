@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN}}
           MAIL_TO_DAWID: ${{secrets.MAIL_TO_DAWID}}
           API_KEY_CMI: ${{secrets.API_KEY_CMI}}
           USER_NAME_CMI: ${{secrets.USER_NAME_CMI}}
