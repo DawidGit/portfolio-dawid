@@ -1,57 +1,57 @@
 [
   {
     "name": "Java",
-    "path": "src/assets/icons/javaIcon.svg",
+    "path": "src/assets/icons/javaIcon.png",
     "category": "programming"
   },
   {
     "name": "Spring Framework",
-    "path": "src/assets/icons/springIcon.svg",
+    "path": "src/assets/icons/springIcon.png",
     "category": "programming"
   },
   {
     "name": "Vuejs",
-    "path": "src/assets/icons/vuejsIcon.svg",
+    "path": "src/assets/icons/vuejsIcon.png",
     "category": "programming"
   },
   {
     "name": "Git",
-    "path": "src/assets/icons/gitIcon.svg",
+    "path": "src/assets/icons/gitIcon.png",
     "category": "programming"
   },
   {
     "name": "Groovy",
-    "path": "src/assets/icons/groovyIcon.svg",
+    "path": "src/assets/icons/groovyIcon.png",
     "category": "programming"
   },
   {
     "name": "Cucumber",
-    "path": "src/assets/icons/cucumberIcon.svg",
+    "path": "src/assets/icons/cucumberIcon.png",
     "category": "testing"
   },
   {
     "name": "CSS3",
-    "path": "src/assets/icons/cssIcon.svg",
+    "path": "src/assets/icons/cssIcon.png",
     "category": "programming"
   },
   {
     "name": "HTML5",
-    "path": "src/assets/icons/htmlIcon.svg",
+    "path": "src/assets/icons/htmlIcon.png",
     "category": "programming"
   },
   {
     "name": "Jira",
-    "path": "src/assets/icons/jiraIcon.svg",
+    "path": "src/assets/icons/jiraIcon.png",
     "category": "other"
   },
   {
     "name": "JavaScript",
-    "path": "src/assets/icons/javaScriptIcon.svg",
+    "path": "src/assets/icons/javaScriptIcon.png",
     "category": "programming"
   },
   {
     "name": "Manual Testing",
-    "path": "src/assets/icons/manualTestingIcon.svg",
+    "path": "src/assets/icons/manualTestingIcon.png",
     "category": "testing"
   }
 ]

@@ -4,22 +4,14 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
-import vuetify from 'vite-plugin-vuetify';
-import { config as dotenvConfig } from 'dotenv';
-// import copy from 'vite-plugin-copy';
+import vuetify from 'vite-plugin-vuetify'
 
-dotenvConfig()
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: '/dawidwidulinski-portfolio/',
   plugins: [
 		vue(),
-		vuetify({ autoImport: true }),
-      // copy({
-      //     targets: [
-      //         { src: 'src/assets/icons', dest: 'dist/assets/icons' }
-      //     ]
-      // })
-          ],
+		vuetify({ autoImport: true }),],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
