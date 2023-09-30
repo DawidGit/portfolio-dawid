@@ -23,9 +23,9 @@ jobs:
 
       - name: Build Vue.js project
         run: |
-          echo "VITE_API_KEY_CMI=${{ secrets.API_KEY_CMI }}" >> .env
-          echo "VITE_USER_NAME_CMI=${{ secrets.USER_NAME_CMI }}" >> .env
-          echo "VITE_MAIL_TO_DAWID=${{ secrets.MAIL_TO_DAWID }}" >> .env
+          echo "VITE_API_KEY_CMI=${{secrets.API_KEY_CMI}}" >> .env
+          echo "VITE_USER_NAME_CMI=${{secrets.USER_NAME_CMI}}" >> .env
+          echo "VITE_MAIL_TO_DAWID=${{secrets.MAIL_TO_DAWID}}" >> .env
           npm run build
 
       - name: Deploy to GitHub Pages

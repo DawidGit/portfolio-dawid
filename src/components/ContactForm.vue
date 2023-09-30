@@ -17,6 +17,10 @@ const form = ref({
 
 async function submitForm() {
 
+  console.log("USERNAME" + userNameEnv)
+  console.log("TOKEN" + apiKeyEnv)
+  console.log("MAILTO" + mailToEnv)
+
   const client = new MessageClient({username: userNameEnv, apiKey: apiKeyEnv});
   const message = {
     to: mailToEnv,
