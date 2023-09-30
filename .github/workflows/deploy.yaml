@@ -33,8 +33,8 @@ jobs:
           PUBLISH_DIR: dist
         run: |
           git config user.email ${{secrets.MAIL_TO_DAWID}}
-          git config user.name "Dawid Git"
-          npm install -g gh-pages
+          git config user.name "DawidGit"
+          npm install -g gh-pages@latest
           gh-pages -d dist -b gh-pages -m "Deploy to GitHub Pages by GitHub Actions"
 
     
