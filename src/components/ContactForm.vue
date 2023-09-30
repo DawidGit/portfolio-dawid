@@ -33,12 +33,12 @@ async function submitForm() {
     form.value.name = '';
     form.value.email = '';
     form.value.message = '';
-    alert('E-mail został wysłany pomyślnie.');
+    alert('The email was sent successfully.');
     console.log(response)
 
   } catch (error) {
-    console.error('Błąd podczas wysyłania e-maila:', error);
-    alert('Wystąpił błąd podczas wysyłania e-maila.');
+    console.error('An error occurred while sending an e-mail:', error);
+    alert('An error occurred while sending an e-mail');
   }
 }
 </script>
