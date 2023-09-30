@@ -5,7 +5,7 @@ import vuetify from 'vite-plugin-vuetify'
 export default defineConfig({
     build: {
         rollupOptions: {
-            external: ['cloudmailin'],
+            external: ['.node_modules/cloudmailin'],
         },
     },
     plugins: [vue(), vuetify({ autoImport: true })],
