@@ -32,4 +32,4 @@ jobs:
           USER_NAME_CMI: ${{secrets.USER_NAME_CMI}}
         run: |
           npm install -g gh-pages
-          gh-pages -d dist -b gh-pages -u "GitHub Actions"
+          gh-pages -d dist -b gh-pages
