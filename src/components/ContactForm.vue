@@ -2,10 +2,13 @@
 import {ref} from "vue";
 import {MessageClient} from 'cloudmailin';
 
+
+
 const mailFrom: string = "contact_form@dawidwidulinski.com"
-const apiKeyEnv: string = import.meta.env.API_KEY_CMI
-const userNameEnv: string = import.meta.env.USER_NAME_CMI
-const mailToEnv: string = import.meta.env.MAIL_TO_DAWID
+const apiKeyEnv =  import.meta.env.VITE_API_KEY_CMI
+const userNameEnv = import.meta.env.VITE_USER_NAME_CMI;
+const mailToEnv = import.meta.env.VITE_MAIL_TO_DAWID;
+
 const form = ref({
   name: '',
   email: '',

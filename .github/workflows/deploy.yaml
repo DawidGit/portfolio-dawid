@@ -22,14 +22,16 @@ jobs:
         run: npm install
 
       - name: Build Vue.js project
-        run: npm run build
+        run: |
+          echo "VITE_API_KEY_CMI=${{ secrets.API_KEY_CMI }}" >> .env
+          echo "VITE_USER_NAME_CMI=${{ secrets.USER_NAME_CMI }}" >> .env
+          echo "VITE_MAIL_TO_DAWID=${{ secrets.MAIL_TO_DAWID }}" >> .env
+          npm run build
 
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{secrets.GENERAL_TOKEN}}
           MAIL_TO_DAWID: ${{secrets.MAIL_TO_DAWID}}
-          API_KEY_CMI: ${{secrets.API_KEY_CMI}}
-          USER_NAME_CMI: ${{secrets.USER_NAME_CMI}}
           PUBLISH_DIR: dist
         run: |
           git config user.email ${MAIL_TO_DAWID}

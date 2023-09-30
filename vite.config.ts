@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
+import envCompatible from "vite-plugin-env-compatible";
 
 export default defineConfig({
     build: {
@@ -8,7 +9,7 @@ export default defineConfig({
             external: ['.node_modules/cloudmailin'],
         },
     },
-    plugins: [vue(), vuetify({ autoImport: true })],
+    plugins: [envCompatible(), vue(), vuetify({ autoImport: true })],
     resolve: {
         alias: {
             '@': new URL('./src', import.meta.url).pathname,
