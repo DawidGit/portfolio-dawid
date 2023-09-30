@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.email ${MAIL_TO_DAWID}
           git config user.name "DawidGit"
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/portfolio-dawid.git
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/DawidGit/portfolio-dawid.git
           npm install -g gh-pages@latest
           gh-pages -d dist -b gh-pages -m "Deploy to GitHub Pages by GitHub Actions"
 
