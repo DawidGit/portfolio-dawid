@@ -1,20 +1,46 @@
 <script setup lang="ts">
 import {ref} from "vue";
+import {MessageClient} from "cloudmailin"
+import * as process from "process";
 
+const mailFrom: string = "contact_form@dawidwidulinski.com"
+const apiKeyEnv: string = process.env.API_KEY_CMI
+const userNameEnv: string = process.env.USER_NAME_CMI
+const mailToEnv: string = process.env.MAIL_TO_DAWID
 const form = ref({
   name: '',
   email: '',
   message: ''
 });
 
-function submitForm() {
-console.log(form)
+async function submitForm() {
 
-  form.value.name ='';
-  form.value.email='';
-  form.value.message='';
+  const client = new MessageClient({username: userNameEnv, apiKey: apiKeyEnv});
+  const message = {
+    to: mailToEnv,
+    from: form.value.name + '<' + mailFrom + '>',
+    plain: form.value.message,
+    html: "<h1>" + form.value.message + "</h1>",
+    subject: "Mail from contact form"
+  }
+
+
+  console.log(form)
+
+  try {
+
+    const response = await client.sendMessage(message)
+    form.value.name = '';
+    form.value.email = '';
+    form.value.message = '';
+    alert('E-mail został wysłany pomyślnie.');
+    console.log(response)
+
+  } catch (error) {
+    console.error('Błąd podczas wysyłania e-maila:', error);
+    alert('Wystąpił błąd podczas wysyłania e-maila.');
+  }
 }
-
 </script>
 
 <template>
@@ -52,33 +78,34 @@ console.log(form)
   width: 300px;
   color: #181818;
 }
-.form-elements{
+
+.form-elements {
   margin-bottom: 15px;
 }
 
-.form-elements label{
+.form-elements label {
   display: block;
   margin-bottom: 5px;
 }
 
-.form-elements input{
+.form-elements input {
   border-radius: 5px;
   cursor: text;
 }
 
-.message-field{
+.message-field {
   height: 200px;
   border-radius: 5px;
 }
 
-button{
+button {
   border: 1px solid grey;
   width: 100px;
   height: 30px;
   border-radius: 5px;
 }
 
-button:hover{
+button:hover {
   background-color: grey;
   transition: all 1s;
 }
