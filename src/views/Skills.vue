@@ -109,4 +109,26 @@ p {
   transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 1280px) {
+  .avatar {
+    height: 100px;
+    width: 100px;
+  }
+  .icon .tooltiptext {
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .avatar {
+    height: 80px;
+    width: 80px;
+  }
+  .icon .tooltiptext {
+    top: 80px;
+  }
+}
+
+
+
 </style>

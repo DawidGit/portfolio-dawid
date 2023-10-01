@@ -3,7 +3,7 @@
     <div class="avatar-container">
       <div class="avatar">
         <a :href="job.companyWebsite" target="_blank">
-          <v-avatar class="custom-btn" :image="'src' + job.companyLogo" size="60"></v-avatar>
+          <v-avatar class="custom-btn" :image="job.companyLogo" size="60"></v-avatar>
         </a>
       </div>
       <div class="job-title-container">
@@ -42,10 +42,10 @@ import jobs from '@/assets/experience.json'
 }
 
 .avatar {
-  display: flex;
+  position: relative;
   padding-right: 30px;
-  justify-items: center;
   padding-top: 5px;
+  text-align: center
 }
 
 .custom-btn:hover {
@@ -56,6 +56,7 @@ import jobs from '@/assets/experience.json'
 .job-title-container {
   display: block;
   align-content: center;
+  padding-left: 20px;
 }
 
 .responsibilities {
@@ -71,6 +72,7 @@ p {
 h1 {
   color: #f2f2f2;
   font-size: 20px;
+  text-align: left;
 
 }
 
@@ -78,9 +80,10 @@ v-col {
   height: 300px;
 }
 
-
-@media only screen and (min-width: 1280px) {
-
+a{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 </style>

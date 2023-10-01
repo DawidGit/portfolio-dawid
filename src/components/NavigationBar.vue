@@ -61,7 +61,7 @@ export default {
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 
 }
 
@@ -138,6 +138,14 @@ h1 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 40px;
     line-height: normal;
+  }
+}
+
+
+@media only screen and (max-width: 490px) {
+  h1 {
+    text-align: center;
+    font-size: 35px;
   }
 }
 
