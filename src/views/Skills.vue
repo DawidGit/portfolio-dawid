@@ -1,7 +1,7 @@
 <template>
 
   <div class="container">
-    <h1>My Skills</h1>
+    <p> Technologies that I use in my daily work and private projects </p>
 
     <!--    programming-->
     <div class="subtitle-container">
@@ -9,7 +9,7 @@
       <v-row class="icons-container">
         <div class="icon" v-for="icon in icons" :key="icon">
           <span v-if="icon.category==='programming'" class="tooltiptext">{{ icon.name }}</span>
-          <a v-if="icon.category==='programming'" href="https://www.google.com" target="_blank">
+          <a v-if="icon.category==='programming'" :href="icon.website" target="_blank">
             <v-avatar v-if="icon.category==='programming'" class="avatar" :image="icon.path"></v-avatar>
           </a>
         </div>
@@ -22,7 +22,7 @@
       <v-row class="icons-container">
         <div class="icon" v-for="icon in icons" :key="icon">
           <span v-if="icon.category==='testing'" class="tooltiptext">{{ icon.name }}</span>
-          <a v-if="icon.category==='testing'" href="https://www.google.com" target="_blank">
+          <a v-if="icon.category==='testing'" :href="icon.website" target="_blank">
             <v-avatar v-if="icon.category==='testing'" class="avatar" :image="icon.path"></v-avatar>
           </a>
         </div>
@@ -34,7 +34,7 @@
         <v-row class="icons-container">
           <div class="icon" v-for="icon in icons" :key="icon">
             <span v-if="icon.category==='other'" class="tooltiptext">{{ icon.name }}</span>
-            <a v-if="icon.category==='other'" href="https://www.google.com" target="_blank">
+            <a v-if="icon.category==='other'" :href="icon.website" target="_blank">
               <v-avatar v-if="icon.category==='other'" class="avatar" :image="icon.path"></v-avatar>
             </a>
           </div>
@@ -104,7 +104,7 @@ p {
   background-color: #192733;
   border-radius: 5px;
   padding: 0 5px;
-  top: 110px;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
 }

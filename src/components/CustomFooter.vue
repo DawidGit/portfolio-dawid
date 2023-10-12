@@ -34,17 +34,17 @@
 }
 
 .facebook-icon {
-  background-image: url("../../public/footer-icons/facebookIcon.svg");
+  background-image: url("/footer-icons/facebookIcon.svg");
 }
 .linkedin-icon{
-  background-image: url("../../public/footer-icons/linkedinIcon.svg");
+  background-image: url("/footer-icons/linkedinIcon.svg");
 }
 
 .instagram-icon{
-  background-image: url("../../public/footer-icons/instagramIcon.svg");
+  background-image: url("/footer-icons/instagramIcon.svg");
 }
 .github-icon{
-  background-image: url("../../public/footer-icons/githubIcon2.svg");
+  background-image: url("/footer-icons/githubIcon2.svg");
 }
 
 .footer-icon{

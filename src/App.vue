@@ -16,7 +16,6 @@ import {defineComponent} from 'vue'
 import NavigationBar from "@/components/NavigationBar.vue";
 import CustomFooter from "@/components/CustomFooter.vue";
 
-
 export default defineComponent({
   name: 'App',
   components: {CustomFooter, NavigationBar},
@@ -41,7 +40,11 @@ export default defineComponent({
 }
 
 .container-style {
-  min-height: 70vh;
+  min-height: 80vh;
+}
+
+body{
+  background-color: #121212;
 }
 
 

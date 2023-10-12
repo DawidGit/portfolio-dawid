@@ -2,56 +2,103 @@
   {
     "name": "Java",
     "path": "/icons/javaIcon.svg",
-    "category": "programming"
+    "category": "programming",
+    "website": "https://www.java.com"
   },
   {
     "name": "Spring Framework",
     "path": "/icons/springIcon.svg",
-    "category": "programming"
+    "category": "programming",
+    "website":  "https://spring.io"
   },
   {
-    "name": "Vuejs",
+    "name": "VueJS",
     "path": "/icons/vuejsIcon.svg",
-    "category": "programming"
+    "category": "programming",
+    "website":  "https://vuejs.org/"
   },
   {
     "name": "Git",
     "path": "/icons/gitIcon.svg",
-    "category": "programming"
+    "category": "programming",
+    "website":  "https://git-scm.com/"
   },
   {
     "name": "Groovy",
     "path": "/icons/groovyIcon.png",
-    "category": "programming"
+    "category": "programming",
+    "website":  "https://groovy-lang.org/"
   },
   {
     "name": "Cucumber",
     "path": "/icons/cucumberIcon.svg",
-    "category": "testing"
+    "category": "testing",
+    "website":  "https://cucumber.io"
+  },
+  {
+    "name": "Spock Framework",
+    "path": "/icons/spockIcon.svg",
+    "category": "testing",
+    "website":  "https://spockframework.org"
   },
   {
     "name": "CSS3",
     "path": "/icons/cssIcon.svg",
-    "category": "programming"
+    "category": "programming",
+    "website":  "https://www.css3.com"
   },
   {
     "name": "HTML5",
     "path": "/icons/htmlIcon.svg",
-    "category": "programming"
+    "category": "programming",
+    "website":  "https://html5.org"
   },
   {
     "name": "Jira",
     "path": "/icons/jiraIcon.svg",
-    "category": "other"
+    "category": "other",
+    "website":  "https://www.atlassian.com/software/jira"
+  },
+  {
+    "name": "Monday.com",
+    "path": "/icons/mondayIcon.svg",
+    "category": "other",
+    "website":  "https://monday.com"
   },
   {
     "name": "JavaScript",
     "path": "/icons/javaScriptIcon.svg",
-    "category": "programming"
+    "category": "programming",
+    "website":  "https://www.ecma-international.org/publications-and-standards/standards/ecma-262"
   },
   {
     "name": "Manual Testing",
     "path": "/icons/manualTestingIcon.png",
-    "category": "testing"
+    "category": "testing",
+    "website":  "https://en.wikipedia.org/wiki/Manual_testing"
+  },
+  {
+    "name": "Postman",
+    "path": "/icons/postmanIcon.svg",
+    "category": "testing",
+    "website":  "https://www.postman.com"
+  },
+  {
+    "name": "JMeter",
+    "path": "/icons/jmeterIcon.svg",
+    "category": "testing",
+    "website":  "https://jmeter.apache.org"
+  },
+  {
+    "name": "JUnit",
+    "path": "/icons/junitIcon.svg",
+    "category": "testing",
+    "website":  "https://junit.org"
+  },
+  {
+    "name": "VBA",
+    "path": "/icons/vbaIcon.svg",
+    "category": "other",
+    "website":  "https://pl.wikipedia.org/wiki/Visual_Basic_for_Applications"
   }
 ]
